@@ -1,0 +1,22 @@
+<h2 class="country-name">{{name}}</h2>
+<div class="country-info">
+    <table>
+        <tbody>
+            <tr class="row">
+                <td class="name"><b>Capital:</b></td>
+                <td class="value">{{capital}}</td>
+            </tr>
+            <tr class="row">
+                <td class="name"><b>Population:</b></td>
+                <td class="value">{{population}}</td>
+            </tr>
+            <tr class="row">
+                <td class="name"><b>Languages:</b></td>
+                <td class="value">
+                    <ul class="languages">{{#each languages}}<li class="language-item">{{this.name}} </li>{{/each}}
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table> <img class="country-flag" src="{{flag}}" alt="{{name}}" />
+</div>
