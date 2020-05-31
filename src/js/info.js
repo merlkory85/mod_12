@@ -1,12 +1,10 @@
 import debounce from 'lodash.debounce';
 import PNotify from 'pnotify/dist/es/PNotify';
-import PNotifyButtons from 'pnotify/dist/es/PNotifyButtons';
 import 'pnotify/dist/es/PNotifyStyleMaterial.js';
-// import 'material-design-icons/iconfont/material-icons.css';
 import fetchData from '../js/fetch.js';
 PNotify.defaults.styling = 'material';
 PNotify.defaults.icons = 'material';
-import fetch from './fetch';
+
 
 import countryList from '../template/countryList.hbs';
 import dropdownItem from '../template/dropdown.hbs';
