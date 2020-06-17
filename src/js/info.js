@@ -18,6 +18,7 @@ function renderCountries(event) {
   event.preventDefault();
   const userInfo = event.target.value;
   if (userInfo.length >= 1) {
+    dropdown.textContent = '';
     fetchData(userInfo).then(data => {
       if (data.length >= 2 && data.length <= 10) {
         dropdown.classList.remove('hidden');
